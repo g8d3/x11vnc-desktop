@@ -129,6 +129,9 @@ RUN apt-get update && \
     ldconfig && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+# Install open interpreter
+RUN pip install open-interpreter
+
 ########################################################
 # Customization for user and location
 ########################################################
